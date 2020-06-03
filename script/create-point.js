@@ -13,7 +13,7 @@ function fecthLocalities(url, selector_name) {
         // } else if (selector_name == "select[name=city]") {
         //     selector.innerHTML = `<option value="">selecionar a cidade</option>`
         // }   
-        selector.innerHTML = `<option value="">selecionar o local</option>`
+        selector.innerHTML = `<option value="">selecionar o local</option>`                                            
         
 
         for (var locality of localities) {
