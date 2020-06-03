@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ecoleta</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/create-point.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div id="page-create-point">
+            <header>
+                    <img src="../icones/logo.svg" alt="logomarca ecoleta">
+
+                    <a href="index.html">
+                        <span></span>
+                        Voltar para home
+                    </a>
+            </header> 
+            
+            <form>
+                <h1>Cadastro do pono de coleta</h1>
+
+                <fieldset>
+                    <legend>
+                        <h2>Dados da entidade</h2>
+                    </legend>
+
+                    <div class="field">
+                        <label for="nome-entidade">Nome da entidade</label>
+                        <input type="text" name="name" id="nome-entidade">
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="adress">Endereço</label>
+                            <input type="text" name="adress" id="adress">
+                        </div>
+                        
+                        <div class="field" id="numero-casa">
+                            <label for="house-number">Número</label>
+                            <input type="Number" name="house-number" id="house-number">
+                        </div>
+                        <div class="field" id="comp">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" name="complemento" id="complemento">
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="uf">Estado</label>
+                            <select name="uf" id="uf">
+                                <option value="">Selecione o Estado</option>
+                            </select>
+
+                        </div>
+
+                        <div class="field">
+                            <label for="city">Cidade</label>
+                            <select name="city" id="city" disabled>
+                                <option value="">Selecione a cidade</option>
+                            </select>
+                        </div>
+                        
+
+                        <input type="hidden" name="state">
+                    </div>
+
+
+
+
+
+
+
+                </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <fieldset>
+                    <legend>
+                        <h2>Ítems de coleta</h2>
+                    </legend>
+                </fieldset> 
+
+                <div class="button-form">
+                    <button type="submit">Cadastrar ponto de coleta</button>
+                </div>
+            </form>
+
+
+        </div>
+
+        <script src="/script/create-point.js"></script>
+    </body>
+</html>

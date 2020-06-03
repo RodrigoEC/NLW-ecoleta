@@ -1,0 +1,135 @@
+
+
+
+#page-create-point {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#page-create-point header {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#page-create-point header a {
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: bold;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+
+}
+
+#page-create-point header a span {
+    margin-right: 10px;
+    background-image: url(../icones/arrow-left.svg);
+    height: 22px;
+    width: 20px;
+    display: flex;
+}
+
+form {
+    margin: 80px auto;
+
+    background-color: white;
+    padding: 64px;
+
+    border-radius: 8px;
+
+    max-width: 880px;
+}
+
+form h1 {
+    font-size: 36px;
+}
+
+form fieldset {
+    margin: 64px 0;
+    border: 0;
+
+}
+
+form legend {
+    margin-bottom: 40px
+}
+
+form legend h2{
+    font-size: 32px;
+}
+
+form .field {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 24px;
+    
+
+}
+
+form .field-group {
+    display: flex;
+}
+
+
+form input, form select {
+    background-color: #dddde9;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 18px;
+    outline-color: var(--primary-color);
+    border-radius: 8px;
+}
+
+form select, form input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+form label {
+    color: #6658b1;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+form .field-group .field + .field {
+    margin-left: 24px; 
+}
+
+form .field-group #numero-casa {
+    flex: 0;
+    width: 100px;
+}
+
+form .field-group #comp {
+    flex: 0;
+    width: 200px;
+}
+
+
+form button {
+    width: 260px;
+    height: 56px;
+
+    background-color: var(--primary-color); 
+    border-radius: 8px;   
+    border: 0;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+
+    transition: background-color .4s;
+
+}
+
+form button:hover {
+    background-color: #2fb86e;
+}
