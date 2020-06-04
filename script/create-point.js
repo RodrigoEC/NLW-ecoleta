@@ -101,37 +101,6 @@ function handleSelectedItem(event) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // for (item of itemsToCollect) {
 //     item.addEventListener('mouseover', addSelectedItem)
 //     item.addEventListener('mouseout', removeSelectedItem)
