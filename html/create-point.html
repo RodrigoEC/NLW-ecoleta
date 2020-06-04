@@ -31,19 +31,19 @@
                     </legend>
 
                     <div class="field">
-                        <label for="nome-entidade">Nome da entidade</label>
-                        <input type="text" name="name" id="nome-entidade">
+                        <label for="nome-entidade" >Nome da entidade</label>
+                        <input type="text" name="name" id="nome-entidade" required>
                     </div>
 
                     <div class="field-group">
                         <div class="field">
                             <label for="adress">Endereço</label>
-                            <input type="text" name="adress" id="adress">
+                            <input type="text" name="adress" id="adress" required>
                         </div>
                         
                         <div class="field" id="numero-casa">
                             <label for="house-number">Número</label>
-                            <input type="Number" name="house-number" id="house-number">
+                            <input type="Number" name="house-number" id="house-number" required>
                         </div>
                         <div class="field" id="comp">
                             <label for="complemento">Complemento</label>
@@ -56,7 +56,7 @@
                     <div class="field-group">
                         <div class="field">
                             <label for="uf">Estado</label>
-                            <select name="uf" id="uf">
+                            <select name="uf" id="uf" required>
                                 <option value="">Selecione o Estado</option>
                             </select>
 
@@ -64,7 +64,7 @@
 
                         <div class="field">
                             <label for="city">Cidade</label>
-                            <select name="city" id="city" disabled>
+                            <select name="city" id="city" disabled required>
                                 <option value="">Selecione a cidade</option>
                             </select>
                         </div>
@@ -73,31 +73,47 @@
                         <input type="hidden" name="state">
                     </div>
 
-
-
-
-
-
-
                 </fieldset>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 <fieldset>
                     <legend>
                         <h2>Ítems de coleta</h2>
                     </legend>
+
+                    <div class="items-grid">
+                        <li data-id="1">
+                            <img src="/icones/lampadas.svg" alt="Coleta de lâmpadas">
+                            <span>Lâmpadas</span>
+                        </li>
+
+                        <li data-id="2">
+                            <img src="/icones/baterias.svg" alt="Coleta de pilhas e baterias">
+                            <span>Pilhas Baterias</span>
+                        </li>
+
+                        <li data-id="3">
+                            <img src="/icones/papeis-papelao.svg" alt="Coleta de papeis e papelão">
+                            <span>Papeis e papelão</span>
+                        </li>
+
+                        <li data-id="4">
+                            <img src="/icones/eletronicos.svg" alt="Coleta de resíduos e eletrônicos">
+                            <span>Resíduos e eletrônicos</span>
+                        </li>
+
+                        <li data-id="5">
+                            <img src="/icones/organicos.svg" alt="Coleta de resíduos orgânicos">
+                            <span>Resíduos Orgânicos</span>
+                        </li>
+
+                        <li data-id="6">
+                            <img src="/icones/oleo.svg" alt="Coleta de óleos de cozinha">
+                            <span>Óleo de cozinha</span>
+                        </li>
+
+                    </div>
+
+                    <input type="hidden" name="items">
                 </fieldset> 
 
                 <div class="button-form">
@@ -111,3 +127,5 @@
         <script src="/script/create-point.js"></script>
     </body>
 </html>
+
+<!-- Terminei em 56:09 -->
