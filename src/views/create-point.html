@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ecoleta</title>
+        <title>Formulário de coleta</title>
         <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" href="../styles/create-point.css">
         <link rel="stylesheet" href="../styles/responsive.css">
@@ -13,15 +13,8 @@
     <body>
 
         <div id="page-create-point">
-            <header>
-                <a href="/"><img src="../icones/logo.svg" alt="logomarca ecoleta"></a>
-
-
-                <a href="/">
-                    <span></span>
-                    Voltar para home
-                </a>
-            </header> 
+            
+            {% include "partials/page-header.html" %} 
             
             <form>
                 <h1>Cadastro do pono de coleta</h1>
@@ -78,7 +71,7 @@
 
                 <fieldset>
                     <legend>
-                        <h2>Ítems de coleta</h2>
+                        <h2>Itens de coleta</h2>
                     </legend>
 
                     <div class="items-grid">
