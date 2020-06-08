@@ -13,14 +13,14 @@ server.use(express.static("public"))
 const nunjucks = require("nunjucks")
 nunjucks.configure("src/views", {
     express: server,
-    nocache: true 
+    noCache: true 
 })
 
 // configurar caminhos na minha aplicação
 // página inicial
 
 server.get("/", (req, res) => {
-    return res.render("index.html")
+    return res.render("index.html", { title: "Seu marketplace de coleta de resíduos"})
 })
 
 server.get("/create-point", (req, res) => {
